@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Opdracht 10</title>
+</head>
+<body>
+<p>Dit is niet juist, omdat in <code>&lt;ul&gt;</code>- of <code>&lt;ol&gt;</code>
+    -elementen alleen lijstitems (<code>&lt;li&gt;</code>) mogen staan.</p>
+
+<ul>
+    <li>een</li>
+    <li>twee</li>
+    <ol>
+        <li>jan</li>
+        <li>piet</li>
+        <li>joris</li>
+    </ol>
+    <li>vier</li>
+</ul>
+
+<p>Om het juist te maken, moet de code er ongeveer zo uitzien:</p>
+
+<ul>
+    <li>een</li>
+    <li>twee
+        <ol>
+            <li>jan</li>
+            <li>piet</li>
+            <li>joris</li>
+        </ol>
+    </li>
+    <li>vier</li>
+</ul>
+</body>
+</html>
