@@ -1,86 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <title>Homepage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Uitbreiding Homepage</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-<h1>Flower</h1>
 
-<ul>
-  <li>persoonlijke informatie:
+<header>
+  <h1>Flower</h1>
+</header>
 
-    <ul>
-      <li>Flower Flower</li>
-      <li>Stationstraat 7b</li>
-      <li>0471458535</li>
-      <li>flowerflower@hotmail.com</li>
-      <li><img width="150" height="150" src="images/flower.jpg" alt="FLower profile picture."></li>
-    </ul>
-  </li>
+<main>
 
-  <li> hobby's:
-    <ul>
-      <li> Basketball
-        <ul>
-          <li> Omschrijving: <br>
-            Basketbal is een teamsport waarbij twee teams van vijf spelers proberen om een bal in de basket van de tegenstander te werpen.
-          </li>
-          <li> Website: <br>
-            <a href="https://www.nba.com/">NBA website</a>
-          </li>
-        </ul>
-      </li>
-      <li>Gaming
-        <ul>
-          <li>Omscrijving: <br>
-            Gaming is het spelen van digitale of elektronische spellen op apparaten zoals computers, consoles, tablets of smartphones.
-          </li>
-          <li> Website: <br>
-            Er zijn niet echt gaming websites, maar hier is een vb van een platform: <a href="https://store.steampowered.com/">Steam</a>
-          </li>
-        </ul>
-      </li>
-      <li>Lezen
-        <ul>
-          <li> Omschrijving: <br>
-            Lezen is het proces van het herkennen, interpreteren en begrijpen van geschreven symbolen (letters, woorden, zinnen) om informatie, betekenis en kennis op te nemen.
-          </li>
-          <li> Website: <br>
-            Hier is een website ik gebruik om e-books te lezen: <a href="https://openlibrary.org/">Open Library</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </li>
+  <section aria-labelledby="persoonlijke-info">
+    <h2 id="persoonlijke-info">Persoonlijke informatie</h2>
+    <address>
+      <p>John Wick</p>
+      <p>Stationstraat 7b</p>
+      <p>0471 45 85 35</p>
+      <p><a href="mailto:flowerflower@hotmail.com">johnwick@hotmail.com</a></p>
+    </address>
+    <figure>
+      <img width="150" height="150" src="images/flower.jpg" alt="Profielfoto van Flower.">
+    </figure>
+  </section>
 
-  <li> interesses:
-    <ul>
-      <li> Favoriete band
-        <ul>
-          <li>Set It Off</li>
-          <li>
-            <img width="150" height="150" src="images/setitoff.jpg" alt="Set it off band foto">
-          </li>
-          <li><a href="https://setitoffband.com/">SetItOff Website</a></li>
-        </ul>
-      </li>
-      <li> Favoriete film
-        <ul>
-          <li>Constantine</li>
-          <li>
-            <img width="150" height="250" src="images/constantine.jpg" alt="Constantine film foto">
-          </li>
-          <li>
-            <a href="https://www.warnerbros.com/movies/constantine">WarnerBros constantine</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </li>
+  <section aria-labelledby="hobbys">
+    <h2 id="hobbys">Hobby's</h2>
 
+    <article>
+      <h3>Basketbal</h3>
+      <p>Basketbal is een teamsport waarbij twee teams van vijf spelers proberen om een bal in de basket van de tegenstander te werpen.</p>
+      <p>Website: <a href="https://www.nba.com/" target="_blank" rel="noopener">NBA website</a></p>
+    </article>
 
+    <article>
+      <h3>Gaming</h3>
+      <p>Gaming is het spelen van digitale of elektronische spellen op apparaten zoals computers, consoles, tablets of smartphones.</p>
+      <p>Website: <a href="https://store.steampowered.com/" target="_blank" rel="noopener">Steam</a></p>
+    </article>
 
-</ul>
+    <article>
+      <h3>Lezen</h3>
+      <p>Lezen is het proces van het herkennen, interpreteren en begrijpen van geschreven symbolen (letters, woorden, zinnen) om informatie, betekenis en kennis op te nemen.</p>
+      <p>Website: <a href="https://openlibrary.org/" target="_blank" rel="noopener">Open Library</a></p>
+    </article>
+  </section>
+
+  <section aria-labelledby="interesses">
+    <h2 id="interesses">Interesses</h2>
+
+    <article>
+      <h3>Favoriete band – Set It Off</h3>
+      <figure>
+        <img width="150" height="150" src="images/setitoff.jpg" alt="Foto van de band Set It Off.">
+        <figcaption>Set It Off</figcaption>
+      </figure>
+      <p><a href="https://setitoffband.com/" target="_blank" rel="noopener">Bezoek de officiële website</a></p>
+    </article>
+
+    <article>
+      <h3>Favoriete film – Constantine</h3>
+      <figure>
+        <img width="150" height="250" src="images/constantine.jpg" alt="Filmposter van Constantine.">
+        <figcaption>Constantine (film)</figcaption>
+      </figure>
+      <p><a href="https://www.warnerbros.com/movies/constantine" target="_blank" rel="noopener">Warner Bros Constantine</a></p>
+    </article>
+  </section>
+
+  <section aria-labelledby="prognose">
+    <h2 id="prognose">Prognose</h2>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="4">Prognose</th>
+        </tr>
+      </thead>
+
+      <tbody>
+      <tr>
+        <td>Studenten</td>
+        <td>Web Development</td>
+        <td>FOP 1</td>
+        <td>Computer Systems</td>
+      </tr>
+
+      <tr>
+        <td>Ik</td>
+        <td>12</td>
+        <td>10</td>
+        <td>16</td>
+      </tr>
+
+      <tr>
+        <td>Student 1</td>
+        <td>12</td>
+        <td>13</td>
+        <td>15</td>
+      </tr>
+
+      <tr>
+        <td>Student 2</td>
+        <td>9</td>
+        <td>7</td>
+        <td>18</td>
+      </tr>
+
+      <tr>
+        <td>Student 3</td>
+        <td>15</td>
+        <td>16</td>
+        <td>9</td>
+      </tr>
+
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025</p>
+</footer>
+
 </body>
 </html>
