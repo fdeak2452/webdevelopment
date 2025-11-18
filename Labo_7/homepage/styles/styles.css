@@ -1,0 +1,121 @@
+body {
+    width: 95%;
+    margin: auto;
+    background-color: #9e9595;
+}
+
+body h1 {
+    font-size: 4em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #FFC0CBFF;
+}
+
+ul {
+    background-color: #7a6f72;
+    margin: auto;
+}
+
+ul > li {
+    font-weight: bold;
+    color: pink;
+}
+
+ul > li > a {
+    color: purple;
+}
+
+ul > li > a:hover {
+    color: #cd04cd;
+}
+
+img {
+    border: 5px solid #ffabd5;
+}
+
+
+
+
+.datagrid {
+    font: normal 12px/150% Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    border: 1px solid #652299;
+    border-radius: 3px;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    overflow: hidden;
+}
+
+.datagrid th,
+.datagrid td {
+    padding: 8px 10px;
+}
+
+.datagrid thead th {
+    background: #652299;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    border-left: 1px solid #714399;
+}
+
+.datagrid thead th:first-child {
+    border-left: none;
+}
+
+.datagrid tbody td {
+    color: #4D1A75;
+    border-left: 1px solid #E7BDFF;
+    font-size: 12px;
+}
+
+.datagrid tbody td:first-child {
+    border-left: none;
+}
+
+.datagrid tbody tr.alt td {
+    background: #F4E3FF;
+}
+
+.datagrid tfoot td {
+    padding: 0;
+}
+
+.datagrid tfoot td div {
+    border-top: 1px solid #652299;
+    background: #F4E3FF;
+    padding: 4px;
+}
+
+.datagrid tfoot ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    list-style: none;
+}
+
+.datagrid tfoot li {
+    display: inline-block;
+}
+
+.datagrid tfoot a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 1px;
+    color: #FFFFFF;
+    border: 1px solid #652299;
+    border-radius: 3px;
+    background: #652299;
+}
+
+.datagrid tfoot a:hover,
+.datagrid tfoot a.active {
+    background: #4D1A75;
+    border-color: #4D1A75;
+    color: #fff;
+}
+.datagrid td.onbekend {
+    background-color: red !important;
+}

@@ -1,0 +1,53 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+table caption {
+    background-color: #a1a1cd;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px;
+    color: black;
+}
+
+table thead th {
+    background-color: #222147;
+    color: #c8bef0;
+    padding: 8px;
+    border: 1px solid #999;
+}
+
+table td {
+    border: 1px solid #999;
+    padding: 8px;
+    color: black;
+}
+
+table td.vorige,
+table td.volgende {
+    background-color: #ccc;
+    color: #999;
+}
+
+table tbody tr:last-child td.volgende {
+    opacity: 0.4;
+}
+
+table tbody tr td:first-child:not(.vorige):not(.volgende),
+table tbody tr td:last-child:not(.vorige):not(.volgende) {
+    background-color: rgb(255, 220, 220);
+}
+
+table td.feestdag {
+    background-color: rgb(250, 120, 120) !important;
+    font-weight: bold;
+    color: black;
+}
+
+table td a {
+    color: blue;
+    text-decoration: underline;
+}

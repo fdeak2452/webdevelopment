@@ -1,0 +1,44 @@
+section > header{
+    background-image: url("../images/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 0 45px 0;
+    margin: 0;
+    font-family: helvetica, arial, sans-serif;
+}
+
+body{
+    width: 95%;
+    margin: auto;
+}
+
+nav{
+    background-color: dimgray;
+    padding-top: 5px;
+}
+
+nav a{
+    color: #45ecb5;
+    text-decoration: none;
+    font-family: helvetica, arial, sans-serif;
+}
+
+article header h2 {
+    color: #525050;
+    font-family: helvetica, arial, sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 2em;
+    padding-top: 30px;
+    margin: 13px 0 13px 0;
+}
+
+div article{
+    background-color: lightgray;
+    margin: 0;
+}
+
