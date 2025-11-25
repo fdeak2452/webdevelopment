@@ -1,42 +1,27 @@
-/* ------------------------------------------ */
-/* ALGEMENE PAGINA-INSTELLINGEN               */
-/* ------------------------------------------ */
-
 body {
     font-family: Verdana, Helvetica, Arial, sans-serif;
     font-size: 1.2em;
     margin: 0;
 }
-
 #imgHeader{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
 #wrapper {
-    width: 95%;               /* volgens opdracht */
+    width: 95%;
     margin: 0 auto;
 }
-
-/* ------------------------------------------ */
-/* TITELS                                      */
-/* ------------------------------------------ */
-
 h1, h2 {
-    color: rgb(0, 126, 126);  /* 007e7e */
+    color: rgb(0, 126, 126);
     font-weight: bold;
 }
-
 h1 {
     font-size: 150%;
 }
-
 h2 {
     font-size: 130%;
 }
-
-
 #elixirs {
     float: right;
     width: 30%;
@@ -45,18 +30,14 @@ h2 {
     text-align: center;
     border: 2px solid darkcyan;
 }
-
 .color{
     background-color: #a7cece;
     border: 3px dotted white;
     font-style: italic;
 }
-
-
 .cd{
 font-style: italic;
 }
-
 .artist{
     font-weight: bold;
 }
@@ -65,27 +46,18 @@ font-style: italic;
 
 
 }
-
-
 #elixirs h1 {
     color: #000000;
 }
-
 #elixirs h2 {
     color: #EF233C;
 }
-
-
-
 #content {
     float: left;
     width: 70%;
     padding: 20px;
     box-sizing: border-box;
 }
-
-
-
 footer {
     clear: both;
     text-align: center;
