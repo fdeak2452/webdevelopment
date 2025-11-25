@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    font-size: 0;
+}
+
+section{
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+p{
+    border: black solid 1px;
+    margin: 10px;
+    padding: 10px;
+}
