@@ -1,0 +1,153 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: white;
+}
+
+#page {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+.top {
+    height: 200px;
+    background-image: url("../images/bgsky3.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: darkblue;
+    position: relative;
+}
+
+.title-main {
+    font-size: 300%;
+    font-weight: bold;
+    font-style: italic;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.title-sub {
+    font-size: 240%;
+    font-weight: bold;
+    margin: 0;
+}
+
+.plane-img {
+    position: absolute;
+    right: 500px;
+    bottom: 40px;
+    width: 320px;
+
+}
+
+
+.news {
+    float: right;
+    width: 25%;
+    background-color: #dddddd;
+    border-left: 1px solid #999999;
+    padding-bottom: 20px;
+}
+
+.news h3 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 120%;
+}
+
+.news p {
+    margin: 10px;
+    font-size: 90%;
+    color: #666666;
+}
+
+
+.main {
+    width: 75%;
+    background-color: #f2f2f2;
+    padding-bottom: 10px;
+}
+
+
+.introduction {
+    background-color: white;
+    margin: 0 20px 20px 20px;
+    padding: 20px;
+}
+
+.introduction p {
+    text-align: left;
+}
+
+.logo {
+    float: left;
+    margin-right: 20px;
+    width: 120px;
+}
+
+.blue-text {
+    color: #0033cc;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.gallery {
+    margin: 20px;
+}
+
+.photo {
+    background-color: white;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px dotted #999999;
+}
+
+.photo img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+
+.bottom {
+    clear: both;
+    background-color: #666666;
+    color: white;
+    line-height: 2em;
+    padding: 20px 0;
+}
+
+.block {
+    display: inline-block;
+    padding-left: 120px;
+    vertical-align: top;
+}
+
+.bottom ul {
+    list-style: disc;
+}
+
+.bottom li ul {
+    list-style: circle;
+}
+
+.block a {
+    color: white;
+}
+
+.block a:hover {
+    color: red;
+}
+
+
+.copyright {
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}

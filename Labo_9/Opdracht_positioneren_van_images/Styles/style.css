@@ -1,0 +1,20 @@
+article:nth-child(even) img{
+    margin-left: 10px;
+    float: right;
+
+}
+
+article{
+    border: 1px solid black;
+    height: 285px;
+    padding: 10px;
+    margin: 10px;
+    background: azure;
+
+}
+
+body{
+    background: #a7cece;
+    margin: 0 auto;
+    width:76%
+}
