@@ -2,22 +2,18 @@ html {
     background-color: #333;
     font-family: Helvetica;
 }
-
 * {
     padding: 10px;
 }
 body {
     margin: 5px;
     background-color: white;
-
 }
-
 header{
     background-color: #ddaa00;
     color: white;
     text-align: center;
 }
-
 nav{
     display: flex;
     justify-content: space-evenly;
@@ -31,11 +27,9 @@ nav a{
     background-color: white;
     padding: 15px 100px;
 }
-
 h1{
     margin: 0;
 }
-
 main{
     background-color: gray;
     display: flex;
@@ -48,14 +42,11 @@ div{
 section{
     margin: 5px;
 }
-
 section a{
     border: 1px #333;
 }
-
 img{
     padding: 0;
-
 }
 footer{
     text-align: center;
@@ -67,15 +58,11 @@ footer{
 footer p{
     font-size: 1em;
 }
-
 @media screen and (min-width: 700px){
     main{
         flex-direction: row;
         justify-content: center;
-
-
     }
-
     div{
         margin: 10px;
     }
