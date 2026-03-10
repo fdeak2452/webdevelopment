@@ -68,7 +68,10 @@ const data = {
     ],
     "Labo 16":[
         {name:"Opdracht Invulformulier",path:"Labo_16/Opdracht_Invulformulier"},
-        {name:"Opdracht typeof",path:"Labo_16/Opdracht_typeof"}
+        {name:"Opdracht typeof",path:"Labo_16/Opdracht_typeof"},
+        {name:"Opdracht Spaties op console",path:"Labo_16/Opdracht_spaties_op_console"},
+        {name:"Opdracht Spaties met functies",path:"Labo_16/Opdracht_spaties_met_functies"},
+        {name:"Opdracht Man van An",path:"Labo_16/Opdracht_man_van_an"}
     ]
 };
 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Tellen van "an"</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<main class="container">
+    <h1>Tellen van de sequentie "an"</h1>
+
+    <label for="tekst" class="label">Tekst</label>
+    <textarea id="tekst" class="input" rows="3">De man van An geeft geen hand aan ambetante verwanten</textarea>
+
+    <div class="controls">
+        <button id="telBtn" class="btn" type="button">Tel "an"</button>
+    </div>
+
+    <section class="output">
+        <div class="row"><span class="key">Zoekterm:</span> <span id="zoekterm" class="val">"an"</span></div>
+        <div class="row"><span class="key">Aantal met indexOf:</span> <span id="countIndexOf" class="val">0</span></div>
+        <div class="row"><span class="key">Aantal met lastIndexOf:</span> <span id="countLastIndexOf" class="val">0</span></div>
+        <div class="row small">Tip: open ook de console (F12) om de tussenstappen te zien.</div>
+    </section>
+</main>
+
+<script src="scripts/script.js"></script>
+</body>
+</html>
