@@ -75,6 +75,10 @@ const data = {
     ],
     "Labo 17":[
         {name:"Opdracht Trigrams", path:"Labo_17/Opdracht_Trigrams"},
+        {name:"Opdracht De En Het", path:"Labo_17/Opdracht_deEnHet"},
+        {name:"Opdracht Gemeenten", path:"Labo_17/Opdracht_Gemeenten"},
+        {name:"Opdracht Formwaarden", path:"Labo_17/Opdracht_formwaarden"},
+        {name:"Opdracht Formvalidatie", path:"Labo_17/Opdracht_formvalidatie"}
     ]
 };
 
