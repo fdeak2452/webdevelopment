@@ -79,6 +79,12 @@ const data = {
         {name:"Opdracht Gemeenten", path:"Labo_17/Opdracht_Gemeenten"},
         {name:"Opdracht Formwaarden", path:"Labo_17/Opdracht_formwaarden"},
         {name:"Opdracht Formvalidatie", path:"Labo_17/Opdracht_formvalidatie"}
+    ],
+    "Labo 18":[
+        {name:"Opdracht_nodes1",path:"Labo_18/Opdracht_nodes1"},
+        {name:"Opdracht_nodes2",path:"Labo_18/Opdracht_nodes2"},
+        {name:"Opdracht_nodes3",path:"Labo_18/Opdracht_nodes3"},
+        {name:"Opdracht_Colorpicker_uitbreiding", path:"Labo_18/Opdracht_Colorpicker_uitbreiding"},
     ]
 };
 
