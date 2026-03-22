@@ -81,10 +81,11 @@ const data = {
         {name:"Opdracht Formvalidatie", path:"Labo_17/Opdracht_formvalidatie"}
     ],
     "Labo 18":[
-        {name:"Opdracht_nodes1",path:"Labo_18/Opdracht_nodes1"},
-        {name:"Opdracht_nodes2",path:"Labo_18/Opdracht_nodes2"},
-        {name:"Opdracht_nodes3",path:"Labo_18/Opdracht_nodes3"},
-        {name:"Opdracht_Colorpicker_uitbreiding", path:"Labo_18/Opdracht_Colorpicker_uitbreiding"},
+        {name:"Opdracht nodes1",path:"Labo_18/Opdracht_nodes1"},
+        {name:"Opdracht nodes2",path:"Labo_18/Opdracht_nodes2"},
+        {name:"Opdracht nodes3",path:"Labo_18/Opdracht_nodes3"},
+        {name:"Opdracht Colorpicker uitbreiding", path:"Labo_18/Opdracht_Colorpicker_uitbreiding"},
+        {name:"Opdracht DOM tree nodes", path:"Labo_18/Opdracht_DOM_tree_nodes"},
     ]
 };
 
