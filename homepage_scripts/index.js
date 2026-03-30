@@ -86,6 +86,10 @@ const data = {
         {name:"Opdracht nodes3",path:"Labo_18/Opdracht_nodes3"},
         {name:"Opdracht Colorpicker uitbreiding", path:"Labo_18/Opdracht_Colorpicker_uitbreiding"},
         {name:"Opdracht DOM tree nodes", path:"Labo_18/Opdracht_DOM_tree_nodes"},
+    ],
+    "Labo 19":[
+        {name:"Opdracht Hit an Object",path:"Labo_19/hitAnObject"},
+        {name:"Opdracht Matching Game",path:"Labo_19/MatchingGame"},
     ]
 };
 
