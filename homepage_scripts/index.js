@@ -1,18 +1,15 @@
-// Zelfde data-object als voorheen (laat dat gewoon staan)
 const data = {
     "Labo 2": [
         "opdracht_3.html","opdracht_4.html","opdracht_5.html","opdracht_6.html",
         "opdracht_7.html","opdracht_8.html","opdracht_9.html","opdracht_10.html",
         "opdracht_11.html","opdracht_12.html","opdracht_13.html"
     ].map((f,i)=>({name:"Opdracht "+(i+3), path:"Labo_2/"+f})),
-
     "Labo 3": [
         ["Opdracht homepage","homepage"],
         ["Opdracht contactinformatie","contactinformatie"],
         ["Opdracht opleidingsaanbod","opleidingsaanbod"],
         ["Opdracht uitbreiding homepage","uitbreiding_homepage"]
     ].map(([n,p])=>({name:n,path:"Labo_3/"+p})),
-
     "Labo 4":[{name:"Opdracht 5",path:"Labo_4/homepage"}],
     "Labo 5":[{name:"Opdracht 6",path:"Labo_5/Opdracht_6"},{name:"Opdracht 7",path:"Labo_5/Opdracht_7"}],
     "Labo 6":[
@@ -50,9 +47,7 @@ const data = {
         {name:"Opdracht 3",path:"Labo_12/Beginsituatie_2"},
         {name:"Opdracht 4",path:"Labo_12/Beginsituatie_3"}
     ],
-    "Labo 13":[
-        {name:"sjabloon oefeningen",path:"Labo_13"}
-    ],
+    "Labo 13":[{name:"sjabloon oefeningen",path:"Labo_13"}],
     "Labo 14":[
         {name:"Opdracht Arrays",path:"Labo_14/Opdracht_Arrays"},
         {name:"Opdracht Dialoogvensters",path:"Labo_14/Opdracht_Dialoogvensters"},
@@ -90,83 +85,63 @@ const data = {
     "Labo 19":[
         {name:"Opdracht Hit an Object",path:"Labo_19/hitAnObject"},
         {name:"Opdracht Matching Game",path:"Labo_19/MatchingGame"},
+    ],
+    "Labo 20":[
+        {name:"Opdracht Dagen op de wereldbol", path:"Labo_20/dagenOpDeWereldbol"},
+        {name:"Opdracht JSON", path:"Labo_20/JSON"},
+        {name:"Opdracht Contactmanager", path:"Labo_20/Contactmanager"},
     ]
 };
 
-
 const container = document.getElementById("content");
 
-// Build dropdown menus
+// Build cards
 Object.entries(data).forEach(([title, items]) => {
-    const dropdown = document.createElement("div");
-    dropdown.className = "dropdown";
-
-    dropdown.innerHTML = `
-        <div class="dropdown-header">
-            ${title}
-            <span>▶</span>
-        </div>
+    const card = document.createElement("div");
+    card.className = "dropdown";
+    card.innerHTML = `
+        <div class="dropdown-header">${title} <span>▼</span></div>
         <div class="dropdown-content">
-            <ol>
-                ${items.map(i => `<li><a href="${i.path}">${i.name}</a></li>`).join("")}
-            </ol>
+            <ol>${items.map(i => `<li><a href="${i.path}">${i.name}</a></li>`).join("")}</ol>
         </div>
     `;
-
-    container.appendChild(dropdown);
+    container.appendChild(card);
 });
 
-// Toggle open/closed
-document.querySelectorAll(".dropdown").forEach(drop => {
-    const header = drop.querySelector(".dropdown-header");
-    const content = drop.querySelector(".dropdown-content");
-
+// Toggle Logic
+document.querySelectorAll(".dropdown-header").forEach(header => {
     header.addEventListener("click", () => {
-        const open = drop.classList.contains("open");
-
+        const drop = header.parentElement;
+        const content = drop.querySelector(".dropdown-content");
+        const isOpen = drop.classList.contains("open");
         drop.classList.toggle("open");
-
-        content.style.maxHeight = open ? "0px" : content.scrollHeight + "px";
+        content.style.maxHeight = isOpen ? "0px" : content.scrollHeight + "px";
     });
 });
 
-// ===== LIVE SEARCH FUNCTION =====
+// Search Logic
 const searchInput = document.getElementById("search");
-
 searchInput.addEventListener("input", () => {
     const query = searchInput.value.toLowerCase();
-
     document.querySelectorAll(".dropdown").forEach(drop => {
         const title = drop.querySelector(".dropdown-header").textContent.toLowerCase();
         const items = [...drop.querySelectorAll("li")];
+        let hasMatch = title.includes(query);
 
-        let match = false;
-
-        // Check if labo title matches
-        if (title.includes(query)) {
-            match = true;
-        }
-
-        // Check if any item matches
         items.forEach(li => {
-            const text = li.textContent.toLowerCase();
-            li.style.display = text.includes(query) ? "list-item" : "none";
-            if (text.includes(query)) match = true;
+            const match = li.textContent.toLowerCase().includes(query);
+            li.style.display = match ? "block" : "none";
+            if (match) hasMatch = true;
         });
 
-        // Show/hide entire dropdown
-        drop.style.display = match ? "block" : "none";
-
-        // Auto-open dropdown when matching
+        drop.style.display = hasMatch ? "block" : "none";
         const content = drop.querySelector(".dropdown-content");
-        if (query !== "") {
+        if (query !== "" && hasMatch) {
             drop.classList.add("open");
             content.style.maxHeight = content.scrollHeight + "px";
-        } else {
+        } else if (query === "") {
             drop.classList.remove("open");
             content.style.maxHeight = "0px";
         }
     });
 });
-
-

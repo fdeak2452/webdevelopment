@@ -2,19 +2,32 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Web Development I – Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development I – Portfolio</title>
     <link rel="stylesheet" href="homepage_styles/index.css">
 </head>
 <body>
+<div class="glow-bg"></div>
+
 <header>
-    <h1>Web Development I</h1>
+    <h1>Web Development <span class="accent">I</span></h1>
+    <p class="subtitle">Mijn Labo Portfolio</p>
+
+    <div class="header-actions">
+        <a href="doom.html" class="doom-button">
+            <span class="icon">💀</span> Enter the Arcade
+        </a>
+    </div>
 </header>
 
 <div class="search-box">
-    <input type="text" id="search" placeholder="Zoek een labo of opdracht...">
+    <div class="input-wrapper">
+        <input type="text" id="search" placeholder="Zoek een labo of opdracht...">
+        <span class="search-icon">🔍</span>
+    </div>
 </div>
 
-<main id="content" class="dropdown-container"></main>
+<main id="content" class="grid-container"></main>
 
 <script src="homepage_scripts/index.js"></script>
 </body>

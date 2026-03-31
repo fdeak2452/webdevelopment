@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Dev I - DOOM Edition</title>
+  <link rel="stylesheet" href="homepage_styles/index.css">
+  <script src="https://v8.js-dos.com/latest/js-dos.js"></script>
+  <link rel="stylesheet" href="https://v8.js-dos.com/latest/js-dos.css">
+  <style>
+    .dosbox-container {
+      width: 800px;
+      height: 600px;
+      margin: 20px auto;
+      border: 2px solid var(--accent-color);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 30px rgba(255, 0, 0, 0.4);
+    }
+  </style>
+</head>
+<body class="doom-page">
+<div class="glow-bg"></div>
+
+<header>
+  <h1>DOOM <span class="accent">Classic</span></h1>
+  <a href="index.html" class="back-link">← Terug naar Labo's</a>
+</header>
+
+<div id="dos" class="dosbox-container"></div>
+
+<div style="text-align:center; color:#888; font-size:0.9rem; margin-top: 10px;">
+  Pijltjes = Bewegen | Ctrl = Schieten | Spatie = Deuren
+</div>
+
+<script>
+  Dos(document.getElementById("dos"), {
+    url: "games/doom.jsdos",
+  });
+</script>
+</body>
+</html>
