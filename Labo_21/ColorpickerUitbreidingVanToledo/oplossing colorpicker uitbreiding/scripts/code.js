@@ -40,6 +40,7 @@ const saveFavorites = () => {
 
     let favoriteData = [];
 
+
     for (let i = 0; i < swatches.length; i++) {
         favoriteData.push({
             r: swatches[i].getAttribute("data-red"),
@@ -70,13 +71,28 @@ const restoreFavorites = () => {
 
 const saveSwatch = () => {
     let swatchComponents = document.getElementById("swatchComponents");
+
     let r = document.getElementById("sldRed").value;
     let g = document.getElementById("sldGreen").value;
     let b = document.getElementById("sldBlue").value;
 
+    let existingSwatches = swatchComponents.getElementsByClassName("swatch");
+    for (let i = 0; i < existingSwatches.length; i++) {
+        let exR = existingSwatches[i].getAttribute("data-red");
+        let exG = existingSwatches[i].getAttribute("data-green");
+        let exB = existingSwatches[i].getAttribute("data-blue");
+
+        if (r === exR && g === exG && b === exB) {
+            console.log("Kleur bestaat al!");
+            return;
+        }
+    }
+
+    // 3. Als we hier komen, is de kleur nieuw: maak hem aan
     let swatch = buildSwatchComponent(r, g, b);
     swatchComponents.appendChild(swatch);
 
+    // 4. Sla de geüpdatete lijst op
     saveFavorites();
 };
 
