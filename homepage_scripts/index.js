@@ -92,7 +92,7 @@ const data = {
         {name:"Opdracht Contactmanager", path:"Labo_20/Contactmanager"},
     ],
     "Labo 21":[
-        {name:"Opdracht ColorPicker Pro", path:"Labo_21/ColorPicker_Pro"},
+        {name:"Opdracht ColorPicker Pro", path:"Labo_21/ColorPicker_pro"},
     ]
 };
 
