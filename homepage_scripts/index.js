@@ -90,6 +90,9 @@ const data = {
         {name:"Opdracht Dagen op de wereldbol", path:"Labo_20/dagenOpDeWereldbol"},
         {name:"Opdracht JSON", path:"Labo_20/JSON"},
         {name:"Opdracht Contactmanager", path:"Labo_20/Contactmanager"},
+    ],
+    "Labo 21":[
+        {name:"Opdracht ColorPicker Pro", path:"Labo_21/ColorPicker_Pro"},
     ]
 };
 
