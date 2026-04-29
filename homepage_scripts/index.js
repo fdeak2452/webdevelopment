@@ -10,8 +10,13 @@ const data = {
         ["Opdracht opleidingsaanbod","opleidingsaanbod"],
         ["Opdracht uitbreiding homepage","uitbreiding_homepage"]
     ].map(([n,p])=>({name:n,path:"Labo_3/"+p})),
-    "Labo 4":[{name:"Opdracht 5",path:"Labo_4/homepage"}],
-    "Labo 5":[{name:"Opdracht 6",path:"Labo_5/Opdracht_6"},{name:"Opdracht 7",path:"Labo_5/Opdracht_7"}],
+    "Labo 4":[
+        {name:"Opdracht 5",path:"Labo_4/homepage"}
+    ],
+    "Labo 5":[
+        {name:"Opdracht 6",path:"Labo_5/Opdracht_6"},
+        {name:"Opdracht 7",path:"Labo_5/Opdracht_7"}
+    ],
     "Labo 6":[
         {name:"Opdracht 1",path:"Labo_6/Opdracht_1"},
         {name:"Opdracht cv",path:"Labo_6/Opdracht_cv/cv.html"},
@@ -21,22 +26,22 @@ const data = {
     ],
     "Labo 7":[
         {name:"Nature blog",path:"Labo_7/Opgave_nature_blog"},
-        {name:"Opdracht homepage",path:"Labo_7/homepage"},
-        {name:"Opdracht kalender",path:"Labo_7/Opdracht_Kalender"}
+        {name:"homepage",path:"Labo_7/homepage"},
+        {name:"kalender",path:"Labo_7/Opdracht_Kalender"}
     ],
     "Labo 8":[
         {name:"Lorem Ipsum",path:"Labo_8/Lorem_Ipsum"},
         {name:"Lorem Ipsum extra space",path:"Labo_8/Lorem_Ipsum_extra_space"},
-        {name:"Opdracht cocktail bar",path:"Labo_8/opdracht_cocktailbar/loungestart.html"}
+        {name:"cocktail bar",path:"Labo_8/opdracht_cocktailbar/loungestart.html"}
     ],
     "Labo 9":[
-        {name:"Opdracht positioneren van images",path:"Labo_9/Opdracht_positioneren_van_images"},
+        {name:"Positioneren van images",path:"Labo_9/Opdracht_positioneren_van_images"},
         {name:"Opdracht airbus",path:"Labo_9/Opdracht_Airbus/airbus.html"}
     ],
     "Labo 10":[
-        {name:"Opdracht Media Queries",path:"Labo_10/Beginsituatie_media_queries/oef1.html"},
-        {name:"Opdracht Bootstrap 5",path:"Labo_10/Beginsituatie_Bootstrap_5"},
-        {name:"Opdracht bootstrap 5 - 2",path:"Labo_10/opdracht_3"}
+        {name:"Media Queries",path:"Labo_10/Beginsituatie_media_queries/oef1.html"},
+        {name:"Bootstrap 5",path:"Labo_10/Beginsituatie_Bootstrap_5"},
+        {name:"Bootstrap 5 - 2",path:"Labo_10/opdracht_3"}
     ],
     "Labo 11":[
         {name:"Grid Exercises",path:"Labo_11/Grid_exercises/index.html"},
@@ -49,50 +54,53 @@ const data = {
     ],
     "Labo 13":[{name:"sjabloon oefeningen",path:"Labo_13"}],
     "Labo 14":[
-        {name:"Opdracht Arrays",path:"Labo_14/Opdracht_Arrays"},
-        {name:"Opdracht Dialoogvensters",path:"Labo_14/Opdracht_Dialoogvensters"},
-        {name:"Opdracht innerHTML",path:"Labo_14/Opdracht_innerHTML"},
-        {name:"Opdracht kopieer",path:"Labo_14/Opdracht_kopieer"},
-        {name:"Opdracht substring",path:"Labo_14/Opdracht_substring"}
+        {name:"Arrays",path:"Labo_14/Opdracht_Arrays"},
+        {name:"Dialoogvensters",path:"Labo_14/Opdracht_Dialoogvensters"},
+        {name:"innerHTML",path:"Labo_14/Opdracht_innerHTML"},
+        {name:"kopieer",path:"Labo_14/Opdracht_kopieer"},
+        {name:"substring",path:"Labo_14/Opdracht_substring"}
     ],
     "Labo 15":[
-        {name:"Opdracht Paragrafen",path:"Labo_15/Opdracht_Paragrafen"},
-        {name:"Opdracht Colorpicker",path:"Labo_15/Opdracht_Colorpicker"},
-        {name:"Opdracht Kleurenwisselaar",path:"Labo_15/Opdracht_Kleurenwisselaar"},
+        {name:"Paragrafen",path:"Labo_15/Opdracht_Paragrafen"},
+        {name:"Colorpicker",path:"Labo_15/Opdracht_Colorpicker"},
+        {name:"Kleurenwisselaar",path:"Labo_15/Opdracht_Kleurenwisselaar"},
         {name:"Opdracht Producten",path:"Labo_15/Opdracht_Producten"}
     ],
     "Labo 16":[
-        {name:"Opdracht Invulformulier",path:"Labo_16/Opdracht_Invulformulier"},
+        {name:"Invulformulier",path:"Labo_16/Opdracht_Invulformulier"},
         {name:"Opdracht typeof",path:"Labo_16/Opdracht_typeof"},
-        {name:"Opdracht Spaties op console",path:"Labo_16/Opdracht_spaties_op_console"},
-        {name:"Opdracht Spaties met functies",path:"Labo_16/Opdracht_spaties_met_functies"},
-        {name:"Opdracht Man van An",path:"Labo_16/Opdracht_man_van_an"}
+        {name:"Spaties op console",path:"Labo_16/Opdracht_spaties_op_console"},
+        {name:"Spaties met functies",path:"Labo_16/Opdracht_spaties_met_functies"},
+        {name:"Man van An",path:"Labo_16/Opdracht_man_van_an"}
     ],
     "Labo 17":[
-        {name:"Opdracht Trigrams", path:"Labo_17/Opdracht_Trigrams"},
-        {name:"Opdracht De En Het", path:"Labo_17/Opdracht_deEnHet"},
-        {name:"Opdracht Gemeenten", path:"Labo_17/Opdracht_Gemeenten"},
-        {name:"Opdracht Formwaarden", path:"Labo_17/Opdracht_formwaarden"},
-        {name:"Opdracht Formvalidatie", path:"Labo_17/Opdracht_formvalidatie"}
+        {name:"Trigrams", path:"Labo_17/Opdracht_Trigrams"},
+        {name:"De En Het", path:"Labo_17/Opdracht_deEnHet"},
+        {name:"Gemeenten", path:"Labo_17/Opdracht_Gemeenten"},
+        {name:"Formwaarden", path:"Labo_17/Opdracht_formwaarden"},
+        {name:"Formvalidatie", path:"Labo_17/Opdracht_formvalidatie"}
     ],
     "Labo 18":[
         {name:"Opdracht nodes1",path:"Labo_18/Opdracht_nodes1"},
         {name:"Opdracht nodes2",path:"Labo_18/Opdracht_nodes2"},
         {name:"Opdracht nodes3",path:"Labo_18/Opdracht_nodes3"},
-        {name:"Opdracht Colorpicker uitbreiding", path:"Labo_18/Opdracht_Colorpicker_uitbreiding"},
+        {name:"Colorpicker uitbreiding", path:"Labo_18/Opdracht_Colorpicker_uitbreiding"},
         {name:"Opdracht DOM tree nodes", path:"Labo_18/Opdracht_DOM_tree_nodes"},
     ],
     "Labo 19":[
-        {name:"Opdracht Hit an Object",path:"Labo_19/hitAnObject"},
-        {name:"Opdracht Matching Game",path:"Labo_19/MatchingGame"},
+        {name:"Hit an Object",path:"Labo_19/hitAnObject"},
+        {name:"Matching Game",path:"Labo_19/MatchingGame"},
     ],
     "Labo 20":[
-        {name:"Opdracht Dagen op de wereldbol", path:"Labo_20/dagenOpDeWereldbol"},
+        {name:"Dagen op de wereldbol", path:"Labo_20/dagenOpDeWereldbol"},
         {name:"Opdracht JSON", path:"Labo_20/JSON"},
-        {name:"Opdracht Contactmanager", path:"Labo_20/Contactmanager"},
+        {name:"Contactmanager", path:"Labo_20/Contactmanager"},
     ],
     "Labo 21":[
-        {name:"Opdracht ColorPicker Pro", path:"Labo_21/ColorPicker_pro"},
+        {name:"ColorPicker Pro", path:"Labo_21/ColorPicker_pro"},
+    ],
+    "Labo 22":[
+        {name:"My Internet Start Page", path:"Labo_22/My_Internet_Start_Page"}
     ]
 };
 
